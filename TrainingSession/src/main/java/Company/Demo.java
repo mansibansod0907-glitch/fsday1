@@ -7,7 +7,7 @@ public class Demo {
 		int a = 45;
 		System.out.println(a);   //decimal
 		
-		int b = 045;
+		int b = 045; 
 		System.out.println(b); //octal
 		
 		int c= 0x45;
