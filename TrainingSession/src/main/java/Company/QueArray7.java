@@ -6,40 +6,24 @@ public class QueArray7 {
 
 	public static void main(String[] args) {
 		
+		int []a= {10,20,30,40,50};
+		
 		        Scanner sc = new Scanner(System.in);
 
-		        System.out.println("Enter the size of array:");
-		        int n = sc.nextInt();
+		        System.out.println("Please enter Index 1 to Swap");
+		        int Idx1 = sc.nextInt();
 
-		        int[] arr = new int[n];
+		        System.out.println("Please enter Index 2 to Swap");
+		        int Idx2 = sc.nextInt();
+		        
+		        int temp = a[Idx1];
+		        a[Idx1] = a[Idx2];
+		        a[Idx1] = temp;
+		        
+		        
+		        
 
-		        System.out.println("Enter array elements:");
-		        for (int i = 0; i < n; i++) {
-		            arr[i] = sc.nextInt();
-		        }
-
-		        System.out.println("Enter first index to swap:");
-		        int i1 = sc.nextInt();
-
-		        System.out.println("Enter second index to swap:");
-		        int i2 = sc.nextInt();
-
-		        // Check index validity
-		        if (i1 >= 0 && i1 < n && i2 >= 0 && i2 < n) {
-
-		            int temp = arr[i1];
-		            arr[i1] = arr[i2];
-		            arr[i2] = temp;
-
-		            System.out.println("Array after swapping:");
-		            for (int i = 0; i < n; i++) {
-		                System.out.print(arr[i] + " ");
-		            }
-
-		        } else {
-		            System.out.println("Invalid index entered!");
-		        }
-
+		           
 		        sc.close();
 		    }
 		
