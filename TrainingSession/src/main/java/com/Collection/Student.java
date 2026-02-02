@@ -1,0 +1,22 @@
+package com.Collection;
+
+class Student{
+	String name;
+	int age;
+	String gender;
+	public Student(String name, int age, String gender) {
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+	}
+	String GetName(){
+		return name;
+	}
+	int GetAge(){
+		return age;
+	}
+	String GetGender(){
+		return gender;
+	}
+}
+
