@@ -18,6 +18,7 @@ public class JDBCTransactions {
 	     String sql1 = "Update account set Acc_bal=Acc_bal-? where Acc_Id=?" ;
 		 String sql2 = "Update account set Acc_bal=Acc_bal+? where Acc_Id=?";
    
+		PreparedStatement pst = null;
 		PreparedStatement pst1 = null;
 		PreparedStatement pst2 = null;
 		Scanner sc= null;
@@ -34,6 +35,7 @@ public class JDBCTransactions {
 		     
 		     //Prepared statement
 		     con.setAutoCommit(false);
+	     
 	       	 pst1 = con.prepareStatement(sql1);
 		     pst2 = con.prepareStatement(sql2);
 		     sc = new Scanner(System.in);
