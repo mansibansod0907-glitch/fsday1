@@ -12,8 +12,8 @@ public class Placeholder {
 		String user ="root";
 		String pass = "Mansi@123";
 		
-		String query="create table car(id Number Primary Key, brand varchar(20),priceNumber)";
-		String query1 = "insert into car values(?,?,?)";
+		//String query="create table car(id Number Primary Key, brand varchar(20),priceNumber)";
+		String query= "insert into car values(?,?,?)";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Driver loaded successfully");
